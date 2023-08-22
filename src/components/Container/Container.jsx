@@ -16,7 +16,7 @@ const Container = () => {
         <div className="px-20 py-12">
             <div className="text-center pb-12">
                 <h3 className="text-3xl font-bold mb-3">OUR <span className="text-purple-600">SERVICES</span></h3>
-                <p className="text-xl text-slate-600">Forge lasting connections with customers. Our methods enhance <br /> engagement, loyalty, and customer-centric strategies.</p>
+                <p className="md:text-xl text-slate-600">Forge lasting connections with customers. Our methods enhance <br /> engagement, loyalty, and customer-centric strategies.</p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 justify-center gap-3">
                 <div className="">
