@@ -9,7 +9,7 @@ const Login = () => {
   const [error, setError] = useState(null)
   const { loginUser, signPopUpGoogle } = useContext(AuthContext);
   const navigate = useNavigate()
-  const from = location.state?.from?.pathname || '/nexa-vision-consults';
+  const from = location.state?.from?.pathname || '/';
 
   const handleLogin = (event) => {
     event.preventDefault();
@@ -78,7 +78,7 @@ const Login = () => {
                 <p className="font-bold text-2xl">G</p>
               </button>
             </div>
-            <p className="text-center">Have not an account? <Link to='/nexa-vision-consults/register' className="text-blue-500">Please Register</Link></p>
+            <p className="text-center">Have not an account? <Link to='/register' className="text-blue-500">Please Register</Link></p>
             <p className='text-red-500'>{error}</p>
           </div>
         </div>

@@ -7,7 +7,7 @@ import { AuthContext } from "../../Providers/AuthProvider";
 
 const Register = () => {
     const navigate = useNavigate()
-    const from = location.state?.from?.pathname || '/nexa-vision-consults/login';
+    const from = location.state?.from?.pathname || '/login';
 
     const {createUser} = useContext(AuthContext);
 
@@ -59,7 +59,7 @@ const Register = () => {
                             </div>
                         </form>
                         <br />
-                        <p className="text-center">Already have an account? <Link to='/nexa-vision-consults/login' className="text-blue-500">Please Login</Link></p>
+                        <p className="text-center">Already have an account? <Link to='/login' className="text-blue-500">Please Login</Link></p>
                     </div>
                 </div>
             </div>

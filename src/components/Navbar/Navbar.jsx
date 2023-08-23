@@ -17,10 +17,10 @@ const Navbar = () => {
     }
 
     const navOptions = <>
-        <li><Link to="/nexa-vision-consults" className="text-black font-semibold hover:text-purple-600">Home</Link></li>
-        <li><Link to="/nexa-vision-consults" className="text-black font-semibold hover:text-purple-600">Services</Link></li>
-        <li><Link to="/nexa-vision-consults" className="text-black font-semibold hover:text-purple-600">About Us</Link></li>
-        <li><Link to="/nexa-vision-consults" className="text-black font-semibold hover:text-purple-600">Contact</Link></li>
+        <li><Link to="" className="text-black font-semibold hover:text-purple-600">Home</Link></li>
+        <li><Link to="" className="text-black font-semibold hover:text-purple-600">Services</Link></li>
+        <li><Link to="" className="text-black font-semibold hover:text-purple-600">About Us</Link></li>
+        <li><Link to="" className="text-black font-semibold hover:text-purple-600">Contact</Link></li>
 
     </>
 
@@ -47,7 +47,7 @@ const Navbar = () => {
                     {user ?
                         <><h1 className="mr-3 h-8 font-semibold font-serif text-green-700" >Welcome, {user.displayName}</h1>
                             <button className="btn btn-primary btn-sm" onClick={handleSignOut}>Sign out</button>
-                        </> : <Link to='/nexa-vision-consults/login'><button className="btn btn-sm btn-primary">Login</button></Link>
+                        </> : <Link to='/login'><button className="btn btn-sm btn-primary">Login</button></Link>
                     }
                 </div>
             </div>

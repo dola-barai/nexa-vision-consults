@@ -13,15 +13,15 @@ import AuthProvider from './Providers/AuthProvider';
 
 const router = createBrowserRouter([
   {
-    path: "/nexa-vision-consults",
+    path: "",
     element: <Home></Home>
   },
   {
-    path: "/nexa-vision-consults/login",
+    path: "/login",
     element: <Login></Login>
   },
   {
-    path: "/nexa-vision-consults/register",
+    path: "/register",
     element: <Register></Register>
   },
 ]);
