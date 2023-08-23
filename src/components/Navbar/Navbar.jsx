@@ -1,10 +1,24 @@
 import { Link } from "react-router-dom";
 import logo from '../../../public/logo1.png'
+import { useContext } from "react";
+import { AuthContext } from "../../Providers/AuthProvider";
+import { UserCircleIcon } from '@heroicons/react/24/solid'
+
 const Navbar = () => {
+    const { user, signOutUser } = useContext(AuthContext)
+
+    const handleSignOut = () => {
+        signOutUser()
+        .then(() => {
+          
+        }).catch(error => {
+           console.error(error)
+        });
+    }
 
     const navOptions = <>
         <li><Link to="/" className="text-black font-semibold hover:text-purple-600">Home</Link></li>
-        <li><Link to="/" className="text-black font-semibold hover:text-purple-600">Services</Link></li>
+        <li><Link to="/service" className="text-black font-semibold hover:text-purple-600">Services</Link></li>
         <li><Link to="/" className="text-black font-semibold hover:text-purple-600">About Us</Link></li>
         <li><Link to="/" className="text-black font-semibold hover:text-purple-600">Contact</Link></li>
 
@@ -30,7 +44,11 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <Link to='/login' className="btn btn-sm btn-primary hover:text-lime-50">Login</Link>
+                    {user ?
+                        <><UserCircleIcon className="mr-3 h-8 w-8 text-purple-700" ></UserCircleIcon>
+                            <button className="btn btn-primary btn-sm" onClick={handleSignOut}>Sign out</button>
+                        </> : <Link to='/login'><button className="btn btn-sm btn-primary">Login</button></Link>
+                    }
                 </div>
             </div>
         </div>

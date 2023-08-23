@@ -16,7 +16,7 @@ const Carousel = () => {
                             <p className="md:text-xl">Unlock your business true potential with tailored strategies and expert guidance.</p>
                             <div className="mt-4">
                                 <button className="btn bg-white text-purple-600 hover:bg-purple-600 hover:text-white me-3 hover:border-purple-600">Read More</button>
-                                <button className="btn bg-purple-600 text-white hover:text-purple-600  border-purple-600">Register Now</button>
+                            
                             </div>
                         </div>
                     </div>
@@ -35,7 +35,7 @@ const Carousel = () => {
                             <p className="md:text-xl">Partner with us to navigate the complexities of modern business and achieve remarkable success.</p>
                             <div className="mt-4">
                                 <button className="btn bg-white text-purple-600 hover:bg-purple-600 hover:text-white me-3 hover:border-purple-600">Read More</button>
-                                <button className="btn bg-purple-600 text-white hover:text-purple-600  border-purple-600">Register Now</button>
+                            
                             </div>
                         </div>
                     </div>
@@ -54,7 +54,7 @@ const Carousel = () => {
                             <p className="md:text-xl">Align your vision with our expertise to drive your business towards excellence and innovation.</p>
                             <div className="mt-4">
                                 <button className="btn bg-white text-purple-600 hover:bg-purple-600 hover:text-white me-3 hover:border-purple-600">Read More</button>
-                                <button className="btn bg-purple-600 text-white hover:text-purple-600  border-purple-600">Register Now</button>
+                            
                             </div>
                         </div>
                     </div>
