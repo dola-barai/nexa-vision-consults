@@ -7,7 +7,7 @@ import { AuthContext } from "../../Providers/AuthProvider";
 
 const Login = () => {
   const [error, setError] = useState(null)
-  const { loginUser } = useContext(AuthContext);
+  const { loginUser, signPopUpGoogle } = useContext(AuthContext);
   const navigate = useNavigate()
   const from = location.state?.from?.pathname || '/';
 
@@ -21,24 +21,32 @@ const Login = () => {
     loginUser(email, password)
       .then(result => {
         const loggedUser = result.user;
-            navigate(from, { replace: true });
-            console.log(loggedUser);
-            form.reset();
-            setError('');
+        navigate(from, { replace: true });
+        console.log(loggedUser);
+        form.reset();
+        setError('');
       })
       .catch(error => {
         setError('')
         console.error(error.message);
         setError(error.message);
         event.target.reset();
-    })
+      })
 
   }
 
   const handleGoogleLogin = () => {
-    
-    
-}
+    signPopUpGoogle()
+      .then(result => {
+        const loggedUser = result.user;
+        navigate(from, { replace: true });
+        console.log(loggedUser);
+      })
+      .catch(error => {
+        console.log(error);
+      })
+
+  }
 
   return (
     <div>

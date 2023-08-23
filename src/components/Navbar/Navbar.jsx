@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import logo from '../../../public/logo1.png'
 import { useContext } from "react";
 import { AuthContext } from "../../Providers/AuthProvider";
-import { UserCircleIcon } from '@heroicons/react/24/solid'
+
 
 const Navbar = () => {
     const { user, signOutUser } = useContext(AuthContext)
@@ -45,7 +45,7 @@ const Navbar = () => {
                 </div>
                 <div className="navbar-end">
                     {user ?
-                        <><UserCircleIcon className="mr-3 h-8 w-8 text-purple-700" ></UserCircleIcon>
+                        <><h1 className="mr-3 h-8 font-semibold font-serif text-green-700" >Welcome, {user.displayName}</h1>
                             <button className="btn btn-primary btn-sm" onClick={handleSignOut}>Sign out</button>
                         </> : <Link to='/login'><button className="btn btn-sm btn-primary">Login</button></Link>
                     }
