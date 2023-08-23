@@ -17,10 +17,10 @@ const Navbar = () => {
     }
 
     const navOptions = <>
-        <li><Link to="" className="text-black font-semibold hover:text-purple-600">Home</Link></li>
-        <li><Link to="" className="text-black font-semibold hover:text-purple-600">Services</Link></li>
-        <li><Link to="" className="text-black font-semibold hover:text-purple-600">About Us</Link></li>
-        <li><Link to="" className="text-black font-semibold hover:text-purple-600">Contact</Link></li>
+        <li><Link to="" className="text-black font-semibold text-lg hover:text-purple-800">Home</Link></li>
+        <li><Link to="" className="text-black font-semibold text-lg hover:text-purple-800">Services</Link></li>
+        <li><Link to="" className="text-black font-semibold text-lg hover:text-purple-800">About Us</Link></li>
+        <li><Link to="" className="text-black font-semibold text-lg hover:text-purple-800">Contact</Link></li>
 
     </>
 
