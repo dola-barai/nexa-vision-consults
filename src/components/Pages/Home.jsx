@@ -15,8 +15,8 @@ const Home = () => {
             </Marquee>
             <Navbar></Navbar>
             <Carousel></Carousel>
-            <Container></Container>
             <VideoPlayer></VideoPlayer>
+            <Container></Container>
             <Posts></Posts>
             <FaQ></FaQ>
             <Footer></Footer>
